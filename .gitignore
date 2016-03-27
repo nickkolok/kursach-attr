@@ -157,3 +157,12 @@ pythontex-files-*/
 
 # Latexian
 TSWLatexianTemp*
+
+# gedit temp files
+*~
+
+# Something strange
+.goutputstream-*
+
+# Не кладём бинарики в репозиторий
+*.pdf

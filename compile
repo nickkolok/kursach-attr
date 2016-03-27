@@ -1,0 +1,4 @@
+#!/bin/bash
+pdflatex kursach.tex
+pdflatex kursach.tex
+evince kursach.pdf
