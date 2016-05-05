@@ -57,15 +57,21 @@ $$
 
 
 
-
+Рассмотрим дифференциальное уравнение
 \begin{equation}
-u'(t)=...
+	u'(t)=
+	\left\{
+		\begin{array}{ll}
+			-(u(t)-1)^2, & u(t) > 1, \\
+			-u^2 (t)   , & 0 \leq u(t) \leq 1 \\
+			u^2 (t)    , & u(t) < 0
+		\end{array}
+	\right.
 \end{equation}
-
 
 ...
 
-Будем искать такие решения, что:
+Будем искать такие решения, что
 \begin{equation}
 	u(t) \in C[0; +\infty)
 \end{equation}
