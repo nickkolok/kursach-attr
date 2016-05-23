@@ -140,6 +140,41 @@ $$
 
 \item)
 
+Рассмотрим обыкновенное дифференциальное уравнение
+\begin{equation}\label{primer_p2}
+	u'(t)=-u^2(t)
+\end{equation}
+
+Решим его как уравнение с разделяющимися переменными:
+$$
+	\frac{du}{dt}=-u^2
+$$
+
+Заметим, что $u\equiv 0$ --- решение уравнения (\ref{primer_p2}).
+Умножив обе части на $\frac{dt}{u^2}$, имеем:
+$$
+	\frac{du}{-u^2}=dt
+$$
+
+Проинтегрируем обе части:
+$$
+	\frac{du}{u}=t+C
+$$
+
+Выразим $u$:
+\begin{equation}\label{primer_p2_solution}
+	u=\frac{1}{t+С}
+\end{equation}
+где $C\in\R$.
+
+Заметим, что условиям $u(t) \in C[0; +\infty)$ и $0 \leq u(t) \leq 1$ удовлетворяют только решения вида (\ref{primer_p2_solution}), где $C>0$:
+\begin{equation}
+	u=\frac{1}{t+C}, C>0
+\end{equation}
+и решение $u \equiv 0$.
+
+
+
 
 \item)
 
