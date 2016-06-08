@@ -328,9 +328,9 @@ $$
 Положим теперь $p=0$.
 Тогда по условию выпущенное из $p$ решение должно удовлетворять уравнению (\ref{primer_p2}).
 Искомое решение есть тождественный нуль:
-$$
+\begin{equation}\label{primer_zk_3}
 	u_3 \equiv 0
-$$
+\end{equation}
 Покажем, что других решений задачи Коши нет.
 Предположим противное.
 Тогда решение задаётся формулой (\ref{primer_p2_solution}) и отвечает условию
@@ -386,8 +386,40 @@ $$
 \paragraph{Обозначение.}
 В случае, если $t_0=0$, соответствующий оператор сдвига по траекториям дифференциального уравнения $S^{t_0}_t (p)$ в целях упрощения записи  в дальнейшем будем обозначать просто $S_t (p)$.
 
+Выпишем теперь оператор сдвига (в нуле) по траекториям уравнения (\ref{primer_iz_statyi}).
+Из (\ref{primer_zk_1}) следует, что при $p>1$
+\begin{equation}\label{sdvig_p1}
+	S_t p =\frac{p+pt-t}{pt-t+1}
+\end{equation}
 
+Из (\ref{primer_zk_2}) следует, что при $0 < p \leq 1$
+\begin{equation}\label{sdvig_p2}
+	S_t p =\frac{p}{pt+1}
+\end{equation}
 
+Из (\ref{primer_zk_3}) следует, что при $p = 0$
+\begin{equation}\label{sdvig_p3}
+	S_t p =\frac{p}{pt+1}
+\end{equation}
+
+Из (\ref{primer_zk_4}) следует, что при $p < 0$
+\begin{equation}\label{sdvig_p4}
+	S_t p =\frac{p}{1 - pt}
+\end{equation}
+
+Или, объединяя (\ref{sdvig_p1})--(\ref{sdvig_p4}),
+\begin{equation}
+	S_t p =
+	\left\{
+		\begin{array}{ll}
+			\frac{p+pt-t}{pt-t+1}, & p > 1
+		\\\\
+			\frac{p}{pt+1},        & 0 \leq p \leq 1
+		\\\\
+			\frac{p}{1 - pt},      & p < 0
+		\end{array}
+	\right.
+\end{equation}
 
 \opred (\cite{Zelenaya}, параграф 3.1, стр. 128)
 
