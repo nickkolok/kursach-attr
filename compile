@@ -1,4 +1,4 @@
 #!/bin/bash
-pdflatex kursach.tex
-pdflatex kursach.tex
-evince kursach.pdf
+pdflatex statya_attr.tex
+pdflatex statya_attr.tex
+evince   statya_attr.pdf
