@@ -170,3 +170,6 @@ TSWLatexianTemp*
 # Temporary merge files
 *.orig
 *.LOCAL
+
+# LirbreOffice locks
+.~lock.*
