@@ -846,6 +846,26 @@ $$
 при этом знак разности $x_j(t) - p_{ji}$ не меняется.
 Заметим, что формула (\ref{primer_R2_x_j}) верна и для случая $\gamma=0$.
 
+Выпишем теперь оператор сдвига.
+Положим в (\ref{primer_R2_x_j}) $t=0$, получим
+$$
+	x_j(0) = \frac{\gamma_{ij}}{C_0}+p_{ji}
+$$
+Таким образом, оператор сдвига по траекториям уравнения \ref{difur_primer_R2} имеет вид
+\begin{equation}\label{primer_R2_oper_sdviga}
+	\tilde{S}_t(x_{j0}) = \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1}+p_{ji}
+\end{equation}
+
+Для $x_0 \in A_i$ имеем $S_t(x_0) \xrightarrow[t \to \infty]{} \alpha_{i}$.
+Действительно,
+\begin{multline}
+	\|S_t(x_0) - \alpha_i\| \leq
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1} + p_ji - p_ji  \right| = \\ =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1} \right| \leq
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t} \right| = \\ =
+	\sqrt{2} \max_{j=1,2} \left| \frac{1}{t} \right| =
+	\frac{\sqrt{2}}{t} \xrightarrow[t \to \infty]{} 0
+\end{multline}
 
 
 \addcontentsline{toc}{chapter}{Литература}
