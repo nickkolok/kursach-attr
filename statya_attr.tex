@@ -678,7 +678,8 @@ $$
 Очевидно, что конечное множество $P$ и компактно, и ограничено в любых пространствах.
 Трансляционная инвариантность функций, тождественно равных константе, также очевидна.
 
-Для доказательства того, что $P$ --- траекторный аттрактор осталось доказать, что $P$ --- притягивающее множество для пространства траекторий $\mathcal{H}^+$ в топологии пространства $С(\mathbb{R}_+$.
+Для доказательства того, что $P$ --- траекторный аттрактор осталось доказать,
+что $P$ --- притягивающее множество для пространства траекторий $\mathcal{H}^+$ в топологии пространства $C(\mathbb{R}_+$.
 
 Пусть $Q \subset \mathcal{H}^+$ --- ограниченное в $L_{\infty}(\mathbb{R}_+;E)$ множество.
 Тогда
@@ -788,6 +789,13 @@ $$
 \newpage
 \subsection*{Минимальный траекторный аттрактор, целиком лежащий вне пространства траекторий}
 
+\begin{wrapfigure}[24]{r}{6cm}
+	\includegraphics[width=\linewidth]{quad2-1.eps}
+	\caption{Разбиение плоскости}
+	\label{fig:somelabel}
+	%\vspace{2cm}
+\end{wrapfigure}
+
 Положим $E=E_0=\R^2$.
 Разобьём $\R^2$ на пять непересекающихся связных множеств следующим образом:
 $$
@@ -815,6 +823,7 @@ $\alpha_4=\alpha_0=(0, 0)$
 Сразу заметим, что $\alpha_i \in \overline{A_i}$, $i=0,...,4$ и
 $\alpha_i \in A_{i+1}$, $i=0,...,3$ (тогда как $\alpha_4 = \alpha_0 \in A_{1}$).
 
+
 Рассмотрим дифференциальное уравнение
 \begin{equation}\label{difur_primer_R2}
 	\frac{d(x_j(t) - p_{ji})}{dt} = -\gamma_{ij}(x_j(t)-p_{ji})^2,
@@ -822,10 +831,16 @@ $\alpha_i \in A_{i+1}$, $i=0,...,3$ (тогда как $\alpha_4 = \alpha_0 \in 
 где
 $$
 	\gamma_{ij} = \sgn(x_j(0)-p_{ji}),~~j=1,2;
-$$
-$$
 	(x_1, x_2) \in A_i, ~~~ \alpha_i = (p_{1i},p_{2i}).
 $$
+
+\begin{wrapfigure}[28]{r}{7.5cm}
+	%\vspace{-5ex}
+	\includegraphics[width=\linewidth]{quad2-2.eps}
+	\caption{Отмеченные точки}
+	\label{fig:somelabel2}
+\end{wrapfigure}
+
 Если $\gamma_{ij} = 0$, то $x_j(t) \equiv p_{ji}$, иначе разделим переменные:
 \begin{equation*}
 	\frac{d(x_j(t) - p_{ji})}{-\gamma_{ij}(x_j(t)-p_{ji})^2} = dt ,
@@ -881,6 +896,13 @@ $$
 $C(\R_+; \R^2)$ и $L_\infty(\R_+; \R^2)$ очевидна.
 Очевидно и то, что $U$ трансляционно инвариантно.
 
+\begin{wrapfigure}[24]{r}{7.5cm}
+	%\vspace{-5ex}
+	\includegraphics[width=\linewidth]{quad2-3.eps}
+	\caption{Направления сдвигов}
+	\label{fig:somelabel3}
+\end{wrapfigure}
+
 Осталось показать, что $U$ есть притягивающее множество в пространстве траекторий $H^+$ уравнения (\ref{difur_primer_R2}).
 Действительно, пусть $M>0$ и $B\subset H^+$ --- ограниченное в $L+\infty(\R_+; \R^2)$ множество.
 Тогда
@@ -897,6 +919,42 @@ $C(\R_+; \R^2)$ и $L_\infty(\R_+; \R^2)$ очевидна.
 \end{multline*}
 Таким образом, $U$ --- действительно траекторный аттрактор, пересечение которого с пространством траекторий
 уравнения (\ref{difur_primer_R2}) пусто.
+
+
+
+\begin{figure}[H]
+\begin{minipage}[h]{0.32\linewidth}
+\center{\includegraphics{quad2-1.eps}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.32\linewidth}
+\center{\includegraphics{quad2-2.eps}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.32\linewidth}
+\center{\includegraphics{quad2-2.eps}}
+\end{minipage}
+\begin{minipage}[h]{1\linewidth}
+\begin{tabular}{p{0.32\linewidth}p{0.32\linewidth}p{0.32\linewidth}}
+\centering Разбиение плоскости & \centering Отмеченные точки & \centering Операторы сдвига \\
+\end{tabular}
+\end{minipage}
+\vspace*{-1cm}
+%\caption{Процесс кодирования: а) оригинальное изображение, б) ФРТ киноформа, в) закодированное изображение.}
+\label{ris:correlationsignals}
+\end{figure}
+
+
+\begin{figure}%[h]
+\center{\includegraphics{quad2-1.eps}}
+%\center{\includegraphics[width=1\linewidth]{quad2-1}}
+\caption{Разбиение плоскости}
+\label{ris:image1}
+\center{\includegraphics{quad2-2.eps}}
+%\center{\includegraphics[width=1\linewidth]{quad2-1}}
+\caption{Отмеченные точки}
+\label{ris:image2}
+\end{figure}
 
 
 \addcontentsline{toc}{chapter}{Литература}
