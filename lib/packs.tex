@@ -7,12 +7,13 @@
 \usepackage{indentfirst} % включить отступ у первого абзаца
 \usepackage[dvips]{graphicx} %хотим вставлять рисунки?
 \graphicspath{{illustr/}}%путь к рисункам
+\usepackage{wrapfig}%рисунки с обтеканием: https://mydebianblog.blogspot.ru/2008/12/latex_15.html
 
 \makeatletter
 \renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
 \makeatother %Смысл этих трёх строчек мне непонятен, но поверим "Запискам дебианщика"
 
-\usepackage{geometry} % Меняем поля страницы. 
+\usepackage{geometry} % Меняем поля страницы.
 \geometry{left=1cm}% левое поле
 \geometry{right=1cm}% правое поле
 \geometry{top=1cm}% верхнее поле
