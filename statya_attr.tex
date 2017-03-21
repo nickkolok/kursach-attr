@@ -841,7 +841,7 @@ $$
 	\label{fig:somelabel2}
 \end{wrapfigure}
 
-Если $\gamma_{ij} = 0$, то $x_j(t) \equiv p_{ji}$, иначе разделим переменные:
+Если $\gamma_{ij} = 0$, то $x_j(t) \equiv const$, иначе разделим переменные:
 \begin{equation*}
 	\frac{d(x_j(t) - p_{ji})}{-\gamma_{ij}(x_j(t)-p_{ji})^2} = dt ,
 \end{equation*}
@@ -859,7 +859,7 @@ $$
 	x_j(t) \xrightarrow[t\to \infty ]{}{p_{ji}},
 \end{equation*}
 при этом знак разности $x_j(t) - p_{ji}$ не меняется.
-Заметим, что формула (\ref{primer_R2_x_j}) верна и для случая $\gamma=0$.
+Заметим, что формула (\ref{primer_R2_x_j}) верна и для случая $\gamma_{ij}=0, x_j(0)=p_{ji}$.
 
 Выпишем теперь оператор сдвига.
 Положим в (\ref{primer_R2_x_j}) $t=0$, получим
@@ -889,7 +889,7 @@ $$
 	\label{fig:somelabel3}
 \end{wrapfigure}
 
-Заметим, что эта оценка равномерна по $x_j0$.
+Заметим, что эта оценка равномерна по $x_{j0}$.
 Более того, из того, что $\alpha_i \in A_{i+1}$, $i=0,...,3$,
 следует, что $S_t(\alpha_i) \xrightarrow[t \to \infty]{} \alpha_{i+1}$,
 т.е. множество функций-констант
