@@ -52,7 +52,7 @@
 	\right.
 \end{equation}
 
-с точки зрения теории обыкновенных дифференциальных уравнений, выпишем его решения и операторы сдвига.
+и выпишем его решения и оператор сдвига.
 
 Будем искать такие решения, что
 \begin{equation}
@@ -176,18 +176,17 @@ $$
 Таким образом, решения уравнения (\ref{primer_iz_statyi}) выписываются в виде:
 \begin{equation}\label{primer_iz_statyi_u_t}
 	\left[
-		\begin{array}{l}
-			u=\frac{1}{t+C}+1
+		\begin{array}{ll}
+			u=\frac{1}{t+C}+1, & C>0
 		\\\\
-			u=\frac{1}{t+1+C}
+			u=\frac{1}{t+1+C}, & C\geq0
 		\\\\
-			u=0
+			u=0,               & C \mbox{--- любое}
 		\\\\
-			u=-\frac{1}{t+C},
+			u=-\frac{1}{t+C},  & C>0
 		\end{array}
 	\right.
 \end{equation}
-где $C>0$ (во втором случае $C \geq 0$).
 
 Покажем теперь разрешимость порождаемой уравнением (\ref{primer_iz_statyi}) задачи Коши.
 В силу того, что уравнение (\ref{primer_iz_statyi}) автономно, т.~е. его правая часть зависит только от $u$ и не зависит от $t$,
@@ -306,7 +305,7 @@ $$
 \end{enumerate}
 
 \opred
-Оператором сдвига $S^{t_0}_t (p)$ по траекториям дифференциального уравнения $x'(t) = f(u,t)$ называется функция, такая, что
+Оператором сдвига $S^{t_0}_t$ по траекториям дифференциального уравнения $x'(t) = f(x,t)$ называется функция, такая, что
 \begin{equation*}
 	S^{t_0}_t (p) = q \Rightleftarrow
 		\exists\left(x_p(t) : x_p(t_0) = p\right)\left[x_p(t) = q\right].
@@ -369,7 +368,7 @@ $$
 Норма в пространстве $E$ не обязательно индуцирована нормой в пространстве $E_0$.
 
 \paragraph{Обозначение.}
-В дальнейшем обозначим $T_+ = C(\mathbb{R},E_0) \cap L_\infty(\mathbb{R},E)$
+В дальнейшем обозначим $T_+ = C(\mathbb{R}_+,E_0) \cap L_\infty(\mathbb{R}_+,E)$
 
 \opred
 Фазовым пространством дифференицального уравнения называют множество состояний системы, которую оно описывает.
@@ -527,8 +526,6 @@ $$
 	\right.
 \end{equation}
 
-Непонятно: нужно ли подробно расписывать дифференцирование?
-
 Так как множество $A$ замкнуто в $\R$, то оно содержит свои минимум и максимум.
 
 Пусть $m = \min A < 0$.
@@ -561,10 +558,12 @@ $$
 нет $(\R,\R)$-аттрактора.
 
 Покажем теперь, что теория минимальных траекторных аттракторов и глобальных аттракторов
-даёт для этого примера более содержательные результаты.
+даёт для этого примера наличие траекторного и глобального аттракторов.
 
 
 \subsection*{Глобальный аттрактор}
+
+Пусть $E\subset E_0$ --- те же, что и указано выше.
 
 \opred (\cite{Zelenaya}, параграф 3.2, стр. 121-122, опр. 3.2.1)
 
@@ -841,7 +840,8 @@ $$
 	\label{fig:somelabel2}
 \end{wrapfigure}
 
-Если $\gamma_{ij} = 0$, то $x_j(t) \equiv const$, иначе разделим переменные:
+Если $\gamma_{ij} = 0$, то $x_j(t) \equiv const$.
+Если $\gamma_{ij} \neq 0$, то разделим переменные:
 \begin{equation*}
 	\frac{d(x_j(t) - p_{ji})}{-\gamma_{ij}(x_j(t)-p_{ji})^2} = dt ,
 \end{equation*}
@@ -854,7 +854,7 @@ $$
 \begin{equation}\label{primer_R2_x_j}
 	x_j(t) = \frac{\gamma_{ij}}{t+C_0}+p_{ji}, C_0 > 0
 \end{equation}
-Из этой записи видно, что
+откуда
 \begin{equation*}
 	x_j(t) \xrightarrow[t\to \infty ]{}{p_{ji}},
 \end{equation*}
@@ -875,9 +875,9 @@ $$
 Действительно,
 \begin{multline}
 	\|S_t(x_0) - \alpha_i\| \leq
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1} + p_ji - p_ji  \right| = \\ =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1} + p_{ji} - p_{ji}  \right| = \\ =
 	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1} \right| \leq
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t} \right| = \\ =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t} \right| =
 	\sqrt{2} \max_{j=1,2} \left| \frac{1}{t} \right| =
 	\frac{\sqrt{2}}{t} \xrightarrow[t \to \infty]{} 0
 \end{multline}
