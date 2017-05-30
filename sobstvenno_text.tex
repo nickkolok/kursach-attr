@@ -365,25 +365,27 @@ $$
 	Q=\{0;1\}.
 $$
 Тогда
-$$
+\begin{multline*}
 	h_{E_0}(R,Q) =
 	\sup_{r\in R} \inf_{q \in Q} \| q - r \|_{E_0} =
 	\sup_{r\in \{0\}} \inf_{q \in \{0;1\}} | q - r | =
 	\inf_{q \in \{0;1\}} | q - 0 | =
+	\\ =
 	\min\{|0-0|,|1-0|\} =
 	\min\{0;1\} =
 	0;
-$$
+\end{multline*}
 с другой стороны,
-$$
+\begin{multline*}
 	h_{E_0}(Q,R) =
 	\sup_{q \in Q} \inf_{r\in R} \| r - q \|_{E_0} =
 	\sup_{q \in \{0;1\}} \inf_{r\in \{0\}} | r - q | =
 	\sup_{q \in \{0;1\}} | 0 - q | =
+	\\ =
 	\max\{|0-0|,|0-1|\} =
 	\max\{0;1\} =
 	1.
-$$
+\end{multline*}
 Т.е.
 $$
 	h_{\mathbb{R}}\left( \{0\}, \{0;1\}\right) \neq h_{\mathbb{R}}\left( \{0;1\} , \{0\} \right).
@@ -575,15 +577,16 @@ $$
 
 Пусть решение имеет вид (\ref{primer_p1_solution}).
 Тогда в выражении $u_1(t)=\frac{1}{t+\frac{1}{p-1}}+1$  (см. (\ref{primer_zk_1_0})) $1<p<K$ и
-\begin{equation}
+\begin{multline}
 	|u_1(t) - v_1(t)| =
 	|u_1(t) - 1| =
 	\left|\left(\frac{1}{t+\frac{1}{p-1}}+1\right) -1\right| =
+	\\ =
 	\left|\frac{1}{t+\frac{1}{p-1}}\right| \leq
 	\left|\frac{1}{t}\right| =
 	\frac{1}{t}
 	\xrightarrow[t\to+\infty]{}0
-\end{equation}
+\end{multline}
 
 Пусть решение имеет вид (\ref{primer_p2_solution}).
 
@@ -603,28 +606,30 @@ $$
 Пусть, наконец, решение имеет вид (\ref{primer_p3_solution}).
 
 Тогда в выражении $u_4(t)=-\frac{1}{t-\frac{1}{p}}$  (см. (\ref{primer_zk_4_0})) $-K < p < 0$ и
-\begin{equation}
+\begin{multline}
 	|u_4(t) - v_0(t)| =
 	|u_4(t) - 0| =
 	|u_4(t)| =
 	\left| -\frac{1}{t-\frac{1}{p}} \right| =
+	\\ =
 	\left| \frac{1}{t+\frac{1}{-p}} \right| \leq
 	\left|\frac{1}{t}\right| =
 	\frac{1}{t}
 	\xrightarrow[t\to+\infty]{}0
-\end{equation}
+\end{multline}
 
 Заметим, что в данном примере стремление функций $u_1$, $u_2$, $u_3$ и $u_4$ к соответствующим функциям из траекторного аттрактора не зависит от выбора константы $K$: функции мажорируются гиперболами.
 
 Следовательно,
-$$
+\begin{multline}
 	h_{\mathbb{R}}(Q(t),P(t)) =
 	\sup_{u\in Q} \inf_{v_i \in P} |u(t) - v_i(t)| =
+	\\ =
 	\sup_{u\in Q} \min(|u(t) - v_0(t)|,|u(t) - v_1(t)|) \leq
 	\sup_{u\in Q} \frac{1}{t} =
 	\frac{1}{t}
 	\xrightarrow[t\to+\infty]{}0
-$$
+\end{multline}
 
 Таким образом, множество $P$ действительно является притягивающим для пространства траекторий $\mathcal{H}^+$ уравнения (\ref{primer_iz_statyi}) и, с учётом выше, является траекторным аттрактором.
 
@@ -643,15 +648,16 @@ $$
 Аналогично траекторным аттрактором не является $P_0$.
 Действительно, для решения вида $u_1(t)=\frac{1}{t+\frac{1}{p-1}}+1, p > 1$ имеем
 
-\begin{equation}
+\begin{multline}
 	h_{\mathbb{R}}(\{u_1(t)\},P_0(t)) =
 	|u_1(t) - v_0(t)| =
 	|u_1(t) - 0| =
+	\\ =
 	|u_1(t)| =
 	\left| \frac{1}{t+\frac{1}{p-1}}+1 \right| =
 	\frac{1}{t+\frac{1}{p-1}}+1 >	1
 	%\not{\xrightarrow[t\to+\infty]{}0}
-\end{equation}
+\end{multline}
 
 Следовательно, траекторный аттрактор $P$ --- минимальный.
 Примечательно, что функция $v_1(t) \equiv 1$ принадлежит минимальному траекторному аттрактору,
@@ -696,7 +702,7 @@ $$
 \newpage
 \subsection*{Минимальный траекторный аттрактор, целиком лежащий вне пространства траекторий}
 
-\begin{wrapfigure}[24]{r}{6cm}
+\begin{wrapfigure}[20]{r}{6cm}
 	\includegraphics[width=\linewidth]{quad2-1.eps}
 	\caption{Разбиение плоскости}
 	\label{fig:somelabel}
@@ -741,13 +747,6 @@ $$
 	(x_1, x_2) \in A_i, ~~~ \alpha_i = (p_{1i},p_{2i}).
 $$
 
-\begin{wrapfigure}[28]{r}{7.5cm}
-	%\vspace{-5ex}
-	\includegraphics[width=\linewidth]{quad2-2.eps}
-	\caption{Отмеченные точки}
-	\label{fig:somelabel2}
-\end{wrapfigure}
-
 Если $\gamma_{ij} = 0$, то $x_j(t) \equiv const$.
 Если $\gamma_{ij} \neq 0$, то разделим переменные:
 \begin{equation*}
@@ -768,6 +767,13 @@ $$
 \end{equation*}
 при этом знак разности $x_j(t) - p_{ji}$ не меняется.
 Заметим, что формула (\ref{primer_R2_x_j}) верна и для случая $\gamma_{ij}=0, x_j(0)=p_{ji}$.
+
+\begin{wrapfigure}[18]{r}{7.5cm}
+	%\vspace{-5ex}
+	\includegraphics[width=\linewidth]{quad2-2.eps}
+	\caption{Отмеченные точки}
+	\label{fig:somelabel2}
+\end{wrapfigure}
 
 Выпишем теперь оператор сдвига.
 Положим в (\ref{primer_R2_x_j}) $t=0$, получим
@@ -790,16 +796,10 @@ $$
 	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1} + p_{ji} - p_{ji}  \right| = \\ =
 	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1} \right| \leq
 	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t} \right| =
+	\\ =
 	\sqrt{2} \max_{j=1,2} \left| \frac{1}{t} \right| =
 	\frac{\sqrt{2}}{t} \xrightarrow[t \to \infty]{} 0
 \end{multline}
-
-\begin{wrapfigure}[16]{r}{7.5cm}
-	%\vspace{-5ex}
-	\includegraphics[width=\linewidth]{quad2-3.eps}
-	\caption{Направления сдвигов}
-	\label{fig:somelabel3}
-\end{wrapfigure}
 
 Заметим, что эта оценка равномерна по $x_{j0}$.
 Более того, из того, что $\alpha_i \in A_{i+1}$, $i=0,...,3$,
@@ -833,7 +833,14 @@ $C(\R_+; \R^2)$ и $L_\infty(\R_+; \R^2)$ очевидна.
 Таким образом, $U$ --- действительно траекторный аттрактор, пересечение которого с пространством траекторий
 уравнения (\ref{difur_primer_R2}) пусто.
 
-Покажем теперь, что $(\mathbb{R}^2,\mathbb{R}^2)$--аттрактора полугруппы транслций в данном примере не существует.
+\begin{wrapfigure}[14]{r}{7.5cm}
+	%\vspace{-5ex}
+	\includegraphics[width=\linewidth]{quad2-3.eps}
+	\caption{Направления сдвигов}
+	\label{fig:somelabel3}
+\end{wrapfigure}
+
+Покажем теперь, что $(\mathbb{R}^2,\mathbb{R}^2)$--аттрактора полугруппы трансляций в данном примере не существует.
 Предположим противное, т.е. что существует $P$ --- аттрактор полугруппы трансляций,
 порождаемой оператором сдвига (\ref{primer_R2_oper_sdviga}).
 
