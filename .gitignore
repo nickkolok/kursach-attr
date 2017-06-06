@@ -171,5 +171,5 @@ TSWLatexianTemp*
 *.orig
 *.LOCAL
 
-# LirbreOffice locks
+# LibreOffice locks
 .~lock.*
