@@ -745,40 +745,40 @@ $\alpha_i \in A_{i+1}$, $i=0,...,3$ (тогда как $\alpha_4 = \alpha_0 \in 
 
 Рассмотрим дифференциальное уравнение
 \begin{equation}\label{difur_primer_R2}
-	\frac{dx_j(t)}{dt} = -\gamma_{ij}(x_j(t)-p_{ji})^2,
+	\frac{dx_j(t)}{dt} = -\gamma_{ij}(x_j(t)-p_{ij})^2,
 \end{equation}
 где
 $$
-	\gamma_{ij} = \sgn(x_j(0)-p_{ji}),~~j=1,2;~~~~
-	(x_1, x_2) \in A_i, ~~~ \alpha_i = (p_{1i},p_{2i}).
+	\gamma_{ij} = \sgn(x_j(0)-p_{ij}),~~j=1,2;~~~~
+	(x_1, x_2) \in A_i, ~~~ \alpha_i = (p_{i1},p_{i2}).
 $$
 
 Для удобства решения представим это уравнение в виде
 \begin{equation*}
-	\frac{d(x_j(t) - p_{ji})}{dt} = -\gamma_{ij}(x_j(t)-p_{ji})^2,
+	\frac{d(x_j(t) - p_{ij})}{dt} = -\gamma_{ij}(x_j(t)-p_{ij})^2,
 \end{equation*}
 т.е. добавим константу под знаком дифференциала.
 
 Если $\gamma_{ij} = 0$, то $x_j(t) \equiv const$.
-Если $\gamma_{ij} \neq 0$, то разделим переменные $t$ и $(x_j(t) - p_{ji}$:
+Если $\gamma_{ij} \neq 0$, то разделим переменные $t$ и $(x_j(t) - p_{ij}$:
 \begin{equation*}
-	\frac{d(x_j(t) - p_{ji})}{-\gamma_{ij}(x_j(t)-p_{ji})^2} = dt ,
+	\frac{d(x_j(t) - p_{ij})}{-\gamma_{ij}(x_j(t)-p_{ij})^2} = dt ,
 \end{equation*}
 откуда
 \begin{equation*}
-	\frac{\gamma_{ij}}{x_j(t)-p_{ji}} = t+C_0, C_0 > 0
+	\frac{\gamma_{ij}}{x_j(t)-p_{ij}} = t+C_0, C_0 > 0
 \end{equation*}
 (неравенство на $C_0$ налагается для обеспечения существования решения на всей положительной полуоси),
 или, что то же самое,
 \begin{equation}\label{primer_R2_x_j}
-	x_j(t) = \frac{\gamma_{ij}}{t+C_0}+p_{ji}, C_0 > 0
+	x_j(t) = \frac{\gamma_{ij}}{t+C_0}+p_{ij}, C_0 > 0
 \end{equation}
 откуда
 \begin{equation*}
-	x_j(t) \xrightarrow[t\to \infty ]{}{p_{ji}},
+	x_j(t) \xrightarrow[t\to \infty ]{}{p_{ij}},
 \end{equation*}
-при этом знак разности $x_j(t) - p_{ji}$ не меняется.
-Заметим, что формула (\ref{primer_R2_x_j}) верна и для случая $\gamma_{ij}=0, x_j(0)=p_{ji}$.
+при этом знак разности $x_j(t) - p_{ij}$ не меняется.
+Заметим, что формула (\ref{primer_R2_x_j}) верна и для случая $\gamma_{ij}=0, x_j(0)=p_{ij}$.
 
 \begin{wrapfigure}[18]{r}{7.5cm}
 	%\vspace{-5ex}
@@ -790,11 +790,11 @@ $$
 Выпишем теперь оператор сдвига.
 Положим в (\ref{primer_R2_x_j}) $t=0$, получим
 $$
-	x_j(0) = \frac{\gamma_{ij}}{C_0}+p_{ji}
+	x_j(0) = \frac{\gamma_{ij}}{C_0}+p_{ij}
 $$
 Таким образом, оператор сдвига по траекториям уравнения (\ref{difur_primer_R2}) имеет вид
 \begin{equation}\label{primer_R2_oper_sdviga}
-	\tilde{S}_t(x_{j0}) = \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1}+p_{ji}
+	\tilde{S}_t(x_{j0}) = \frac{x_{j0}-p_{ij}}{|x_{j0}-p_{ij}|t+1}+p_{ij}
 \end{equation}
 
 Для $x_0 \in A_i$ имеем
@@ -805,9 +805,9 @@ $$
 Действительно,
 \begin{multline}
 	\|S_t(x_0) - \alpha_i\| \leq
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1} + p_{ji} - p_{ji}  \right| = \\ =
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t+1} \right| \leq
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ji}}{|x_{j0}-p_{ji}|t} \right| =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ij}}{|x_{j0}-p_{ij}|t+1} + p_{ij} - p_{ij}  \right| = \\ =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ij}}{|x_{j0}-p_{ij}|t+1} \right| \leq
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ij}}{|x_{j0}-p_{ij}|t} \right| =
 	\\ =
 	\sqrt{2} \max_{j=1,2} \left| \frac{1}{t} \right| =
 	\frac{\sqrt{2}}{t} \xrightarrow[t \to \infty]{} 0
