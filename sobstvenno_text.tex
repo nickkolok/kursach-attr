@@ -801,7 +801,7 @@ $$
 $$
 Таким образом, оператор сдвига по траекториям уравнения (\ref{difur_primer_R2}) имеет вид
 \begin{equation}\label{primer_R2_oper_sdviga}
-	\tilde{S}_t(x_{j0}) = \frac{x_{j0}-p_{ij}}{|x_{j0}-p_{ij}|t+1}+p_{ij}
+	\tilde{S}_t(x_{j}(0)) = \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t+1}+p_{ij}
 \end{equation}
 
 Для $x_0 \in A_i$ имеем
@@ -812,15 +812,15 @@ $$
 Действительно,
 \begin{multline}
 	\|S_t(x_0) - \alpha_i\| \leq
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ij}}{|x_{j0}-p_{ij}|t+1} + p_{ij} - p_{ij}  \right| = \\ =
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ij}}{|x_{j0}-p_{ij}|t+1} \right| \leq
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j0}-p_{ij}}{|x_{j0}-p_{ij}|t} \right| =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t+1} + p_{ij} - p_{ij}  \right| = \\ =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t+1} \right| \leq
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t} \right| =
 	\\ =
 	\sqrt{2} \max_{j=1,2} \left| \frac{1}{t} \right| =
 	\frac{\sqrt{2}}{t} \xrightarrow[t \to \infty]{} 0
 \end{multline}
 
-Заметим, что эта оценка равномерна по $x_{j0}$.
+Заметим, что эта оценка равномерна по $x_{j}(0)$.
 Более того, из того, что $\alpha_i \in A_{i+1}$, $i=0,...,3$,
 следует, что $S_t(\alpha_i) \xrightarrow[t \to \infty]{} \alpha_{i+1}$,
 т.е. множество функций-констант
