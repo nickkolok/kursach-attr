@@ -14,3 +14,7 @@ razdatka:
 	nohup evince   diplom_razdatka.pdf &
 tituln_podpis:
 	convert tituln_podpis.png tituln_podpis.pdf
+tor:
+	pdflatex attr_primer_tor.tex
+	pdflatex attr_primer_tor.tex
+	nohup evince   attr_primer_tor.pdf &
