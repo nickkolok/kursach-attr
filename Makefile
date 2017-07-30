@@ -18,3 +18,7 @@ tor:
 	pdflatex attr_primer_tor.tex
 	pdflatex attr_primer_tor.tex
 	nohup evince   attr_primer_tor.pdf &
+krug1:
+	pdflatex attr_primer_krug1.tex
+	pdflatex attr_primer_krug1.tex
+	nohup evince   attr_primer_krug1.pdf &
