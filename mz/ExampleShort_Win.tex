@@ -1,0 +1,253 @@
+% Уважаемые Авторы!
+%Для подготовки pdf-файлы Вашей работы необходимо 
+%запускать компиляцию с помощью команды latex 
+%(в программе WinEdt это делается нажатием 
+%клавиш Shift + Ctrl + L), после этого нужно 
+%из получившегося dvi файла сделать pdf 
+%с помощью команды dvi2pdf (в программе WinEdt для 
+%этого есть специальная кнопка в верхней панели).
+%Не нужно использовать команду pdflatex, 
+%так как она препятствует команде \mag, 
+%которая производит увеличение страниц 
+%статьи для удобства редактирования.
+%Просим не использовать в тексте рукописи
+%нестандартные макроопределения.
+
+
+\documentclass{article}
+
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[tbtags]{amsmath}
+\usepackage{amsfonts,amssymb}
+
+\hoffset -10mm
+\voffset -7mm
+
+
+\usepackage{mathrsfs}
+\usepackage[short]{mz2ewin}
+\usepackage{graphicx}
+\let\rom=\textup
+
+\theoremstyle{plain}
+
+\newtheorem{condition}{Условие}
+\newtheorem{lemma}{Лемма}
+\newtheorem{theorem}{Теорема}
+\newtheorem{proposition}{Предложение}
+\newtheorem{corollary}{Следствие}
+\newtheorem{notation}{Обозначения}
+\newtheorem{definition}{Определение}
+
+\theoremstyle{definition}
+\newtheorem{proof}{Доказательство}\def\theproof{}
+\newtheorem{remark}{Замечание}
+
+
+\overfullrule5pt
+\mag1300
+\begin{document}
+
+\udk{517.968}
+
+\date{\\
+Исправленный вариант\\ }
+
+\author{А.\,В.~Петров}
+\address{Национальный политехнический институт,
+г.~Иваново}
+\email{valeri@mail.ru}
+
+
+\author{В.\,В.~Иванов}
+\address{Открытый университет,
+г.~Москва}
+\email{ivanov@gmail.com}
+
+
+\title{Квазиклассическая асимптотика
+задачи Штурма--Лиувиля}
+
+
+
+\maketitle
+\begin{fulltext}
+
+%\begin{abstract}
+
+%\end{abstract}
+
+\begin{keywords}
+Задача Штурма --- Лиувилля, сингулярно возмущенные операторы, спектральные задачи.
+\end{keywords}
+
+
+\footnotetext{Данная работа была проделана при частичной
+поддержке гранта INTAS No. 4297F и гранта CGEPI
+IPN Мексика.}
+
+
+
+
+Рассмотрим матричную задачу Штурма--Лиувиля
+\begin{equation}
+\biggl(-ih\frac{d}{dx}\biggr)^2y+A(x)y=Ey,
+\qquad x\in\mathbb R^1,
+\qquad y(x)\in L_2(\mathbb R^1),
+\label{1}
+\end{equation}
+где $y\in\mathbb C^n$, $h\in[0,1)$ является
+малым параметром. Пусть $A(x)=A(x)^\ast$
+является $(n\times n)$-матричной функцией из
+класса $C^\infty(\mathbb R^1)$.
+\begin{condition}
+\label{cond1} Пусть $A(x)$ есть матрица
+вида
+$$
+A(x)=\mathbf
+U(x)\|\lambda_j(x)\delta_{ij}\| \mathbf
+U^\ast(x),
+$$
+где $\mathbf U(x)$~--
+унитарная бесконечно дифференцируемая
+матрица и $\lambda_j(x)\in
+C^\infty(\mathbb R^1)$~-- вещественные
+собственные значения матрицы~$A(x)$.
+Обозначим через $D$ множество
+точек~$x$, в которых собственные
+значения меняют кратность.
+\end{condition}
+
+\begin{lemma}
+\label{lemm1} $1^\circ$ Пусть $y_j^+$,
+$j=1,2$, будут решениями
+системы~\eqref{1}, имеющими на левом
+интервале $(x_0-\delta<x<x_0)$
+асимптотики со знаком ``$+$'',
+амплитудой $\rho_{j}^+$ и
+начальными данными
+$\rho_{j}^+(0)$. Тогда
+существует унитарная $(2\times
+2)$-матрица~$u_{}$ такая, что на
+правом интервале $(x_0<x<x_0+\delta)$
+решения~$y_j^+$, $j=1,2$, имеют
+асимптотики
+\begin{equation}
+y_j^+=\sum_{k=1}^2
+\exp\biggl\{\frac{i}{h}S_k(x)\biggr\}
+\biggl[\frac{e_k(x)\rho_{kj}^+(x)}{\sqrt{p_k(x)}}
++h\psi_{kj}^+(x)+O(h^2)\biggr].
+\label{8}
+\end{equation}
+\end{lemma}
+
+\begin{theorem} \label{theo1}
+Система собственных функций оператора $\mathscr{L}$ обладается следующими свойствами:
+...
+\end{theorem}
+
+%Следствие
+\begin{corollary} Необходимыми и достаточными условиями сходимости ряда ...
+\end{corollary}
+
+%Замечание
+%\begin{remark} Отметим, что доказательство теоремы \ref{theo1} 
+%может быть распространено на случай ...
+%\end{remark}
+
+%Определение
+%\begin{definition} Будем называть ...
+%\end{definition}
+
+%Предложение
+%\begin{proposition} Пусть выполняются следующие неравенства...
+%\end{proposition}
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics{1kriv80}
+%\caption{Многообразие точек смены кратности.}
+%\end{figure}
+
+
+%===============Список литературы==================
+\end{fulltext}
+\begin{thebibliography}{99}
+
+\RBibitem{1}
+\by И.\,Я.~Арефьева, И.\,В.~Волович, Е.\,В.~Писковский
+\paper Скатывание в модели Хиггса и эллиптические функции
+\jour Теоретическая и математическая физика
+\vol 172
+\issue 1 
+\yr 2012 
+\pages 138--154  
+
+
+\RBibitem{2}
+\by В.\,П.~Маслов
+\book Теория возмущений и асимптотические методы
+\publaddr М.
+\publ Изд-во Московского университета
+\yr 1965
+
+\Bibitem{3}
+\by B.~Hellfer
+\paper Theorie spectrale pour des operateurs elliptiques
+\jour Asterisque
+\vol 90
+\pages 1--15
+\yr 1984
+
+
+\RBibitem{4} 
+\by С.\,Ю.~Доброхотов,
+А.\,И.~Шафаревич 
+\paper Квазиклассическое квантование инвариантных изотропных многообразий гамильтоновых систем 
+\inbook Топологические методы в теории гамильтоновых систем 
+\publaddr М.
+\publ Факториал 
+\yr 1998
+
+%Электронный препринт в arXiv
+\RBibitem{5} 
+\by Ph.~Barbe
+\eprint Approximation of integrals over asymptotic sets with applications 
+to probability and statistics \eprintinfo 
+\href{http://arxiv.org/abs/math/0312132}{http://arxiv.org/abs/math/0312132}
+\yr 2003 
+
+ 
+%Статья в трудах конференции
+\RBibitem{6} 
+\by J.\,R.~Isbell
+\paper Epimorphisms and dominions
+\inbook Proceedings of the Conference on Categorical Algebra
+\publ Springer 
+\publaddr New York 
+\yr 1966 
+\pages 232--246
+
+%Препринт
+\RBibitem{7} 
+\by В.\,В.~Кузенов, С.\,В.~Рыжков
+\preprint Математическая модель взаимодействия лазерных пучков высокой энергии с плазменной мишенью в магнитном поле
+\preprintinfo Препринт ИПМех РАН, \No 942
+\publaddr М.
+\yr 2010
+
+\RBibitem{8} 
+\by K.\,O.~Friedrichs
+\book Perturbation of spectra in Hilbert space
+\publaddr Providence
+\publ American Mathematical Society
+\yr 1965
+
+
+\end{thebibliography}
+
+
+\end{document}

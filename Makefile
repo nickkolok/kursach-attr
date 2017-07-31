@@ -22,3 +22,7 @@ krug1:
 	pdflatex attr_primer_krug1.tex
 	pdflatex attr_primer_krug1.tex
 	nohup evince   attr_primer_krug1.pdf &
+mz:
+	cd mz ; pdflatex ExampleShort_Win.tex
+	cd mz ; pdflatex ExampleShort_Win.tex
+	cd mz ; nohup evince   ExampleShort_Win.pdf &
