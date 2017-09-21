@@ -23,7 +23,7 @@ krug1:
 	pdflatex attr_primer_krug1.tex
 	nohup evince   attr_primer_krug1.pdf &
 mz:
-	iconv -f UTF8 -t CP1251 sobstvenno_text.tex > sobstvenno_text.cp1251.tex
+	iconv -f UTF8 -t CP1251 sobstvenno_text.tex > mz/sobstvenno_text.cp1251.tex
 	cd mz ; latex     Zvyagin_Avdeev.tex
 	cd mz ; latex     Zvyagin_Avdeev.tex
 	cd mz ; dvipdf    Zvyagin_Avdeev.dvi
