@@ -24,6 +24,7 @@ krug1:
 	nohup evince   attr_primer_krug1.pdf &
 mz:
 	iconv -f UTF8 -t CP1251 sobstvenno_text.tex > sobstvenno_text.cp1251.tex
-	cd mz ; pdflatex     Zvyagin_Avdeev.tex
-	cd mz ; pdflatex     Zvyagin_Avdeev.tex
+	cd mz ; latex     Zvyagin_Avdeev.tex
+	cd mz ; latex     Zvyagin_Avdeev.tex
+	cd mz ; dvipdf    Zvyagin_Avdeev.dvi
 	cd mz ; nohup evince Zvyagin_Avdeev.pdf &
