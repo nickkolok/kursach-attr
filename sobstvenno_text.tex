@@ -134,10 +134,10 @@ $$
 Действительно,
 \begin{multline}
 	\|S_t(x_0) - \alpha_i\| \leq
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t+1} + p_{ij} - p_{ij}  \right| = \\ =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t+1} + p_{ij} - p_{ij}  \right| =
 	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t+1} \right| \leq
+	\\ \leq
 	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t} \right| =
-	\\ =
 	\sqrt{2} \max_{j=1,2} \left| \frac{1}{t} \right| =
 	\frac{\sqrt{2}}{t} \xrightarrow[t \to \infty]{} 0
 \end{multline}
@@ -161,13 +161,12 @@ $C(\mathbb{R}_+; \mathbb{R}^2)$ и $L_\infty(\mathbb{R}_+; \mathbb{R}^2)$ оче
 Тогда
 \begin{multline*}
 	h_{C([0,M];\mathbb{R}^2)}(\Pi_M T(t)B,\Pi_M U) =
-	\\ =
 	\sup_{v\in B} \inf_{u\in U} \| T(t) v - u \|_{C([0,M];\mathbb{R}^2)} =
+	\\ =
 	\sup_{v\in B} \min_{i=0,..,3} \| T(t) v - u_i \|_{C([0,M];\mathbb{R}^2)} =
-	\\ =
 	\sup_{v\in B} \min_{i=0,..,3} \max_{s\in[0,M]} \| (T(t) v)(s) - u_i(s) \| =
-	\sup_{v\in B} \min_{i=0,..,3} \max_{s\in[0,M]} \| (T(t) v)(s) - \alpha_i \| =
 	\\ =
+	\sup_{v\in B} \min_{i=0,..,3} \max_{s\in[0,M]} \| (T(t) v)(s) - \alpha_i \| =
 	\sup_{v\in B} \min_{i=0,..,3} \max_{s\in[t,t+M]} \| v(s) - \alpha_i \| \leq
 	\frac{\sqrt{2}}{t} \xrightarrow[t\to + \infty]{} 0
 \end{multline*}
