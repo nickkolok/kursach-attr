@@ -1,3 +1,5 @@
+DATE=`date +%Y-%m-%d---%H-%M-%S`
+
 all:
 	pdflatex statya_attr.tex
 	pdflatex statya_attr.tex
@@ -28,3 +30,5 @@ mz:
 	cd mz ; latex     Zvyagin_Avdeev.tex
 	cd mz ; dvipdf    Zvyagin_Avdeev.dvi
 	cd mz ; nohup evince Zvyagin_Avdeev.pdf &
+	cd mz ; zip ../../Zvyagin-Avdeev-statya-attr-mz-$(DATE).zip Zvyagin_Avdeev.pdf Zvyagin_Avdeev.tex *.sty *.eps glyphtounicode.tex *.cp1251.tex
+#	zip    ../Zvyagin-Avdeev-statya-attr-mz-$(DATE).zip mz/{Zvyagin_Avdeev.{pdf,tex},*.sty,*.eps,glyphtounicode.tex,*.cp1251.tex}
