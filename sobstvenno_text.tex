@@ -66,42 +66,42 @@ $i=0, ..., 3$, второй --- за номер координаты
 
 Рассмотрим систему двух обыкновенных дифференциальных уравнений
 \begin{equation}\label{difur_primer_R2}
-	\frac{dx_j(t)}{dt} = -c_{ij} \cdot (x_j(t)-p_{ij})^2, ~~ j=1,2
+	\frac{dx_j(t)}{dt} = -c_{ij} \cdot (x_j(t)-\alpha_{ij})^2, ~~ j=1,2
 \end{equation}
 где
 $
-	c_{ij} = \operatorname{sgn}(x_j(0)-p_{ij}) ;
-	(x_1, x_2) \in A_i,  \alpha_i = (p_{i1},p_{i2}).
+	c_{ij} = \operatorname{sgn}(x_j(0)-\alpha_{ij}) ;
+	(x_1, x_2) \in A_i,  \alpha_i = (\alpha_{i1},\alpha_{i2}).
 $
 Обратим внимание, что каждая координата меняется независимо от другой и гиперболически стремится
 к некоторому предельному значению (это будет показано далее).
 
 Для $c_{ij} \neq 0$ решения этой системы на $[0, \infty)$ имеют вид
 \begin{equation}\label{primer_R2_x_j}
-	x_j(t) = \frac{c_{ij}}{t+C_0}+p_{ij}, C_0 > 0,
+	x_j(t) = \frac{c_{ij}}{t+C_0}+\alpha_{ij}, C_0 > 0,
 \end{equation}
 откуда
 $
-	x_j(t) \xrightarrow[t\to \infty ]{}{p_{ij}},
+	x_j(t) \xrightarrow[t\to \infty ]{}{\alpha_{ij}},
 $
-при этом знак разности $x_j(t) - p_{ij}$ не меняется.
-Если же $c_{ij}=0$, то по построению $x_j(0)=p_{ij}$,
+при этом знак разности $x_j(t) - \alpha_{ij}$ не меняется.
+Если же $c_{ij}=0$, то по построению $x_j(0)=\alpha_{ij}$,
 и формула (\ref{primer_R2_x_j}) также верна.
 
 Выпишем теперь оператор сдвига.
 Положим в (\ref{primer_R2_x_j}) $t=0$, получим
 $
-	x_j(0) = c_{ij}/{C_0}+p_{ij}
+	x_j(0) = c_{ij}/{C_0}+\alpha_{ij}
 $.
 
 Выразив отсюда $C_0$, подставим его и $c_{ij}$ в (\ref{primer_R2_x_j}).
 Таким образом, оператор сдвига по траекториям уравнения (\ref{difur_primer_R2}) имеет вид
 \begin{equation}\label{primer_R2_oper_sdviga}
-	\tilde{S}_t(x_{j}(0)) = \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t+1}+p_{ij}
+	\tilde{S}_t(x_{j}(0)) = \frac{x_{j}(0)-\alpha_{ij}}{|x_{j}(0)-\alpha_{ij}|t+1}+\alpha_{ij}
 \end{equation}
 
 Заметим, что числитель дроби не зависит от $t$, а знаменатель всегда строго положителен.
-Следовательно, разность $\tilde{S}_t(x_j(0)) - p_{ij}$ сохраняет знак,
+Следовательно, разность $\tilde{S}_t(x_j(0)) - \alpha_{ij}$ сохраняет знак,
 и траектория, начавшись в области $A_i$, никогда не перейдёт в другую область $A_{i'}$, $i \neq i'$.
 
 Для $x_0 \in A_i$ имеем
@@ -112,10 +112,10 @@ $.
 Действительно,
 \begin{multline}
 	\|S_t(x_0) - \alpha_i\| \leq
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t+1} + p_{ij} - p_{ij}  \right| =
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t+1} \right| \leq
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-\alpha_{ij}}{|x_{j}(0)-\alpha_{ij}|t+1} + \alpha_{ij} - \alpha_{ij}  \right| =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-\alpha_{ij}}{|x_{j}(0)-\alpha_{ij}|t+1} \right| \leq
 	\\ \leq
-	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-p_{ij}}{|x_{j}(0)-p_{ij}|t} \right| =
+	\sqrt{2} \max_{j=1,2} \left| \frac{x_{j}(0)-\alpha_{ij}}{|x_{j}(0)-\alpha_{ij}|t} \right| =
 	\sqrt{2} \max_{j=1,2} \left| \frac{1}{t} \right| =
 	\frac{\sqrt{2}}{t} \xrightarrow[t \to \infty]{} 0
 \end{multline}
