@@ -173,3 +173,7 @@ TSWLatexianTemp*
 
 # LibreOffice locks
 .~lock.*
+
+mz
+*.cp1251.*
+
