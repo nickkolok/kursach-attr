@@ -1,4 +1,4 @@
-\documentclass[a4paper]{report} %размер бумаги устанавливаем А4
+\documentclass[a4paper,14pt]{extreport} %размер бумаги устанавливаем А4
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel} %используем русский и английский языки с переносами
@@ -14,6 +14,13 @@
 \makeatother %Смысл этих трёх строчек мне непонятен, но поверим "Запискам дебианщика"
 
 \usepackage{geometry} % Меняем поля страницы.
+
+\geometry{left=2.5cm}% левое поле
+\geometry{right=2cm}% правое поле
+\geometry{top=2cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+
+\renewcommand{\baselinestretch}{1.25}% полуторный интервал
 
 \renewcommand{\theenumi}{\arabic{enumi}}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\labelenumi}{\arabic{enumi}}% Меняем везде перечисления на цифра.цифра
