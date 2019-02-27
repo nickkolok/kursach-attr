@@ -1,3 +1,5 @@
+DATE=`date +%Y-%m-%d---%H-%M-%S`
+
 all:
 	pdflatex statya_attr.tex
 	pdflatex statya_attr.tex
@@ -22,3 +24,8 @@ krug1:
 	pdflatex attr_primer_krug1.tex
 	pdflatex attr_primer_krug1.tex
 	nohup evince   attr_primer_krug1.pdf &
+vestnik:
+	pdflatex vestnik_attr.tex
+	pdflatex vestnik_attr.tex
+	nohup evince vestnik_attr.pdf &
+	zip ../vestnik-Zvyagin-Avdeev-$(DATE).zip vestnik_attr.pdf vestnik_attr.tex illustr/Zv*.eps
