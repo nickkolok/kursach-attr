@@ -1,0 +1,51 @@
+\input{lib/packs}
+\LARGE
+\begin{document}
+\input{lib/macro}
+
+МТА вне пространства траекторий.
+
+Полярная система координат на плоскости.
+Для удобства считаем $\varphi = 0$ при $r=0$.
+
+\paragraph{Пример 1.}
+
+
+\begin{equation}
+	\rho' = |1-\rho| \cdot (1-\rho)
+\end{equation}
+
+\begin{equation}
+	\varphi' = (2\pi - \varphi)^2
+\end{equation}
+TODO: а можно ли убрать квадратности?
+
+
+
+МТА: $\{\varphi \equiv 0, \rho \equiv 1\}$.
+АДС нет, т.к. точка $(1;0)$ не инвариантна.
+
+Правая часть разрывна лишь в луче $\{\rho; 0\}$.
+(??)
+
+\paragraph{Пример 2.}
+
+\begin{equation}
+	\rho' = |1-\rho| \cdot (1-\rho)
+\end{equation}
+
+
+\begin{equation}
+	\varphi' = \begin{cases}
+		0, & \rho \neq 1,
+		\\
+		(2\pi - \varphi)^2, & \rho = 1
+		.
+	\end{cases}
+\end{equation}
+
+МТА: $\{\varphi \equiv \mathrm{const}, \rho \equiv 1\}$.
+АДС нет, т.к. точка $(1;0)$ не инвариантна.
+
+
+\end{document}
